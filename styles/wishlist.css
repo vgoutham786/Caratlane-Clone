@@ -25,7 +25,7 @@ body {
     font-weight: 400;
 }
 
-h3 {
+#wish {
 
 
     /* font-family: sans-serif; */
@@ -38,7 +38,7 @@ h3 {
     position: relative;
 }
 
-h3:before {
+#wish:before {
     content: "";
     display: block;
     width: 200px;
@@ -49,7 +49,7 @@ h3:before {
     position: absolute;
 }
 
-h3:after {
+#wish:after {
     content: "";
     display: block;
     width: 200px;
@@ -67,6 +67,7 @@ h3:after {
     border: 0;
     border-radius: 5px;
     color: white;
+    margin-bottom: 300px;
 }
 
 #displayCart {
@@ -76,6 +77,7 @@ h3:after {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: -30px;
+    margin-bottom: 300px;
 }
 
 #displayCart img {
@@ -143,4 +145,418 @@ h3:after {
         gap: 15px;
     }
 
+}
+
+/* *****************popular seacrh******************** */
+.phor {
+    display: flex;
+    gap: 10px;
+}
+
+.punderline {
+    text-decoration: none;
+}
+
+.ppopular-search {
+    font-family: "InterSemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(136, 99, 251);
+    /* line-height: 24px; */
+    font-weight: normal;
+    /* margin-bottom: 5px; */
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+    /* margin-top: -10px; */
+
+}
+
+.ppopular-main {
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+.phor {
+
+    border-bottom: 1px solid rgb(220, 220, 222);
+    margin-top: -10px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(79, 50, 103);
+    text-transform: capitalize;
+    text-transform: uppercase;
+    /* margin-bottom: 20px;
+    margin-top: 5px; */
+}
+
+#pcopy-1 {
+    display: flex;
+    margin-top: -10px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(79, 50, 103);
+    text-transform: capitalize;
+    text-transform: uppercase;
+    gap: 10px;
+
+    margin-top: 5px;
+}
+
+/* #pcopy{
+  
+  } */
+#pcopy h3 {
+    font-size: 14px;
+}
+
+/*
+   ////////////////////////////// */
+/* from here slides show css starts */
+
+
+.mySlides {
+    display: none;
+}
+
+/* 
+  img {
+    vertical-align: middle;
+  } */
+.slides-img1 {
+    /* border: 2px solid red; */
+    width: 50px;
+    margin-top: 50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 2000px; */
+    /* position: relative;
+    margin: auto; */
+    /* border: 2px solid pink; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgb(249, 249, 250);
+    /* padding: 90px 120px 180px; */
+    min-height: 20rem;
+    font-family: "MuliLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+.shilpa1 {
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: inherit;
+    color: rgb(157, 159, 164);
+    font-size: 32px;
+    /* font-size: 30px; */
+    line-height: 44px;
+    /* border: 2px solid red; */
+    width: 90%;
+    font-family: "MuliLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.shilpa {
+    /* border: 2px solid green; */
+    font-size: 15px;
+    color: black;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: slide;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#aboutus {
+    height: 450px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6eff6;
+    /* background-color: #e5d6e5; */
+    color: rgb(181, 181, 181);
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+#aboutus> :nth-child(1) {
+    width: 60%;
+    height: 80%;
+}
+
+#aboutus> :nth-child(2) {
+    width: 25%;
+    height: 80%;
+}
+
+#aboutinner>div {
+    height: 100%;
+    width: 22%;
+    /* border: 1px solid black; */
+}
+
+#aboutinner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutinner h5 {
+    /* font-size: 1.4rem; */
+    /* color: #231535; */
+    /* border: 2px solid red; */
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    /* font-weight: 600; */
+    /* font-family: "Baskervville", serif; */
+    color: #231535;
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#aboutinner p {
+    font-size: 11px;
+    font-family: arial;
+    /* color: #5f4b79; */
+    line-height: 10px;
+    /* border: 2px solid red; */
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-size: 1.1rem; */
+    color: rgb(135, 118, 157);
+    text-transform: uppercase;
+
+
+}
+
+.lowabout {
+    display: flex;
+    /* gap:-90%; */
+    align-items: center;
+    margin-top: 30px;
+    /* margin-left: -90px; */
+    width: 30%;
+    /* border: 2px solid red; */
+}
+
+/* .lowabout img{
+    border: 2px solid red;
+  } */
+#ip {
+    /* border: 2px solid red; */
+    /* height: 36px;
+    width: 36px; */
+    width: 80%;
+    cursor: pointer;
+}
+
+#pp {
+    /* border: 2px solid rgb(55, 0, 255); */
+    /* height: 32px;
+    width: 32px; */
+    width: 80%;
+    cursor: pointer;
+}
+
+#fbp {
+    /* border: 2px solid rgb(242, 255, 0); */
+    /* height: 25px;
+    width: 25px; */
+    width: 90%;
+    cursor: pointer;
+}
+
+#pt {
+    /* border: 2px solid rgb(0, 255, 21); */
+    width: 90%;
+    cursor: pointer;
+}
+
+#pl {
+    /* border: 2px solid rgb(16, 15, 15); */
+    width: 90%;
+    cursor: pointer;
+}
+
+.lowabout~p:first-of-type {
+    font-size: 12px;
+    color: #51248d;
+    margin-top: 25px;
+}
+
+.lowabout~p:last-of-type {
+    font-size: 12px;
+}
+
+#pdown {
+    font-family: "InterSemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.7rem;
+    line-height: 24px;
+    color: rgb(135, 118, 157);
+    margin-bottom: 5px;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+#pstore {
+    /* width: 361px; */
+    width: 370px;
+    border: 2px double transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, rgb(247, 234, 240) 0%, rgb(250, 246, 237) 100%), linear-gradient(90deg, rgb(199, 181, 255) 0%, rgb(252, 198, 255) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    margin-bottom: 70px;
+    /* padding: 0px 10px; */
+
+
+}
+
+.pstorei {
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+}
+
+/* CONTACT PAGE */
+#contactlast h5 {
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    /* font-family: "Baskervville", serif; */
+    color: #231535;
+    font-weight: normal;
+}
+
+#contactlast p {
+    font-size: 12px;
+    font-family: arial;
+    color: #5f4b79;
+    line-height: 15px;
+}
+
+#contactlast button {
+    border: 1px solid rgb(137, 0, 228);
+    margin-top: 20px;
+    /* border-radius: 15px; */
+    padding: 13px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #231535;
+    border-radius: 12px;
+
+
+    /* width: 111px; */
+    /* margin-top: -100px; */
+}
+
+/* contact-us */
+.pchat {
+    /* border: 2px solid rgb(64, 255, 0); */
+    width: 40%;
+    text-decoration: none;
+
+}
+
+.pphone {
+    /* border: 2px solid rgb(0, 255, 30); */
+    width: 40%;
+    text-decoration: none;
+}
+
+.pwhatsapp {
+    /* border: 2px solid rgb(0, 255, 123); */
+    width: 30%;
+    text-decoration: none;
+    margin-top: -5px;
+}
+
+.contactimg {
+    /* border: 2px solid red; */
+    /* margin-right: -25%; */
+    display: flex;
+    /* display: block; */
+}
+
+.ppink {
+    /* border: 2px solid red; */
+
+    color: rgb(222, 87, 229);
+    text-decoration: underline;
+    font-family: "InterRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pdili {
+    width: 170%;
+    margin-left: -40%;
+    margin-top: 20px;
 }

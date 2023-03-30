@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="image-banner">
+      <img
+        src="https://banner.caratlane.com/live-images/10c2cf82f2ad425b960f2587933652a7.jpg"
+        alt=""
+      />
+    </div>
+
+    <header>
+      <div id="left-part">
+        <ul>
+          <li>
+            <a href="#">All</a>
+          </li>
+          <li><a href="#">Try At Home</a></li>
+          <li><a href="#">Designs in Store</a></li>
+          <li><a href="#">Fast Delivery</a></li>
+          <li><a href="#">New In</a></li>
+        </ul>
+      </div>
+      <div id="right-part">
+        <!-- <div id="sort-item">
+          <div>Sort By: Featured</div>
+        </div>
+        <div id="select"><i class="fa-solid fa-angle-down"></i></div> -->
+        <select name="" class="select-box">
+          <option value="">Sort By: Featured</option>
+          <option value="HtoL">Price: High to Low</option>
+          <option value="LtoH">Price: Low to High</option>
+        </select>
+      </div>
+    </header>
+
+    <h3 class="count-update">Engagement Rings <span id="count-item"></span></h3>
+
+    <div id="main-container">
+      <div id="side-filter-bar">
+        <h3>Filter By</h3>
+        <div class="main-scroller">
+          <div class="main-content-div">
+            <div class="price-container">
+              <h3 class="filter-heading">Price</h3>
+              <div class="price-scroll-div">
+                <div class="price-content-div">
+                  <label for="" class="price-select"
+                    ><input
+                      type="radio"
+                      id="price-select-1"
+                      class="checkbox"
+                    />₹40,001 - ₹50,000</label
+                  >
+                  <label for=""
+                    ><input
+                      type="radio"
+                      id="price-select-2"
+                      class="checkbox"
+                    />₹50,001 - ₹75,000</label
+                  >
+                  <label for=""
+                    ><input type="radio" id="price-select-3" />₹75,0001 -
+                    ₹1,00,000</label
+                  >
+                  <label for=""
+                    ><input type="radio" id="price-select-4" />₹1,00,001 -
+                    ₹1,50,000</label
+                  >
+                  <label for=""
+                    ><input type="radio" id="price-select-5" />₹1,50,001 -
+                    ₹2,00,000</label
+                  >
+                  <label for=""
+                    ><input type="radio" id="price-select-6" />₹2,00,001 -
+                    ₹2,50,000</label
+                  >
+                  <label for=""
+                    ><input type="radio" id="price-select-7" />Over
+                    ₹2,50,000</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="type-container">
+              <h3 class="filter-heading">Product Type</h3>
+              <div class="type-content-div">
+                <label for=""
+                  ><input
+                    type="radio"
+                    name=""
+                    id=""
+                    class="checkbox"
+                  />Rings</label
+                >
+              </div>
+            </div>
+            <div class="weight-container">
+              <h3 class="filter-heading">Weight Ranges</h3>
+              <div class="weight-content-div">
+                <label for=""><input type="radio" name="" id="" />0-2g</label>
+                <label for=""><input type="radio" name="" id="" />2-5g</label>
+                <label for=""><input type="radio" name="" id="" />5-10g</label>
+                <label for=""><input type="radio" name="" id="" />10-20g</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="data-wrapper">
+        <div class="card">
+          <img
+            src="https://cdn.caratlane.com/media/catalog/product/S/R/SR03301-WGP900_1_lar.jpg"
+            alt=""
+            class="card-img"
+          />
+          <div class="card-data">
+            <h2 class="card-price">₹92,981</h2>
+            <a href="#" class="check-delivery">Check Delivery Date ></a>
+            <p class="card-title">Coz Solitair Ring</p>
+            <button class="try-button">View Details</button>
+            <button class="call-button">Live Video Call</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/product.js"></script>
+</html>

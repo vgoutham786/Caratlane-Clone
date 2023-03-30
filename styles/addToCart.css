@@ -386,9 +386,35 @@ body {
     font-weight: 800;
 }
 
+.similarproduct {
+    /* border: 1px solid brown; */
+}
+
 .similarproductcontainer {
     display: flex;
     justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.similaritem1 {
+    width: 20%;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+}
+
+.similaritem1 img {
+    /* border: 1px solid red; */
+    width: 100%;
+    border-radius: 5px;
+}
+
+.similartext {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.discountprice {
+    font-size: 12px;
 }
 
 #productimageg .apiimage {
@@ -400,9 +426,117 @@ body {
 #productimageg {
     margin: auto;
     text-align: center;
+    border: 1px solid red;
 }
 
 #apitext {
     font-size: 12px;
     margin-left: 30px;
+}
+
+
+/* ***********************Customer Rating****************** */
+
+.customer {
+    border: 1px solid blue;
+    margin-top: 40px;
+    background-color: #f9f9fa;
+    margin-bottom: 20px;
+}
+
+.customerreview {
+    border: 1px solid brown;
+    width: 30%;
+    padding-left: 90px;
+}
+
+.flrx {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.writeareview {
+    width: 50%;
+    border: 1px solid black;
+}
+
+#greviewbtn {
+    padding: 5px 100px 5px 100px;
+    background: linear-gradient(to right, #de57e5, #8863fb);
+    display: block;
+    margin: auto;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#reviewtext {
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Reviewtest {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#reviewmsg {
+    margin-left: 10px;
+    color: black;
+}
+
+#RateUs {
+    color: black;
+    padding-top: 11px;
+    font-size: 20px;
+}
+
+.shopbyproduct {
+    border: 1px solid red;
+    padding-bottom: 50px;
+}
+
+.shopbyproductimg {
+    text-align: center;
+    color: #231535;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: BegumMedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.shopbyproductimg img {
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    width: 80%;
+}
+
+.shopbyproductdiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 30px;
+}
+
+#shop {
+    color: #33363e;
+    font-size: 28px;
+    font-weight: 500;
+    margin-left: 20px;
+    font-family: BegumMedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#helpbtn {
+    display: block;
+    margin-left: 97%;
+    position: sticky;
+    top: 0
 }

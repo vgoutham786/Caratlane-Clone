@@ -1,0 +1,146 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#emptywishlist {
+    display: none;
+    width: 40%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#emptywishlist div:nth-child(1) {
+    margin: -10% auto;
+    width: 16%;
+}
+
+#emptywishlist div:nth-child(2) {
+    text-align: center;
+    margin-top: 13%;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+h3 {
+
+
+    /* font-family: sans-serif; */
+    margin: 100px auto;
+    color: #231535;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 600px;
+    position: relative;
+}
+
+h3:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #f0f0f0;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+h3:after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #f0f0f0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+#emptywishlist button {
+    padding: 2% 15%;
+    margin-left: 29%;
+    background: linear-gradient(to right, #de57e5, #8863fb);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+#displayCart {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: -30px;
+}
+
+#displayCart img {
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+
+#displayCart>div>button {
+    background: linear-gradient(to right, #de57e5, #8863fb);
+    border: 0;
+    border-radius: 15px;
+    padding: 4% 8%;
+    color: white;
+    cursor: pointer;
+    margin-left: 35%;
+    font-weight: 400;
+    margin-top: -3px;
+
+}
+
+
+
+.parent {
+    position: relative;
+    display: inline-block;
+}
+
+.remove {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    color: gainsboro;
+    cursor: pointer;
+}
+
+.price {
+    color: #4F3267;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 28.5px;
+    margin-bottom: 3px;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+.title {
+    color: #9D9FA4;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:990px) {
+    #displayCart {
+
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+}

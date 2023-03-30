@@ -3,18 +3,20 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: auto;
 }
 
 
 nav {
     display: flex;
-    width: 95%;
-    margin: auto;
+
     /* justify-content: space-between; */
 }
 
 nav>:nth-child(2) img {
-    width: 20%
+    width: 20%;
+    margin-left: 5%;
 }
 
 nav button {
@@ -25,8 +27,89 @@ nav button {
 
 nav>:nth-child(3) {
     display: flex;
+    margin-right: 3%;
+    margin-left: 5%;
 }
 
 nav>:nth-child(4) {
     display: flex;
+
+}
+
+nav>:nth-child(4) img {
+    margin-top: -15px;
+}
+
+#staticdiv {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+    border-left: 10px solid #8863FB;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 15%;
+
+
+}
+
+#staticdiv>div>:nth-child(1) {
+    font-size: 19px;
+    color: #8863FB;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+
+#staticdiv>div>:nth-child(2) a {
+    color: #DE57E5;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#middle>div:nth-child(2) {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.innerdiv {
+    display: flex;
+    width: 32%;
+    margin-left: 15%;
+    /* justify-content: space-between; */
+}
+
+.innerdiv img {
+    width: 20%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.remove {
+    margin-top: 43%;
+    display: block;
+    padding: 2% 80%;
+}
+
+.movewishlist {
+    display: block;
+    margin-top: 10%;
+
+    /* padding-right:100px;  */
+    /* padding-left: 100px;  */
+}
+
+.innerdiv select {
+    border: 0;
+}
+
+
+.details {
+    margin-left: -90%;
+    margin-right: 10%;
+    text-align: left;
 }

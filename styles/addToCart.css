@@ -11,7 +11,7 @@ body {
 
 .main {
     width: 95%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     height: 900px;
     margin: auto;
     display: flex;
@@ -21,7 +21,7 @@ body {
 
 .gleft-product-image {
     width: 40%;
-    /* border: 1px solid brown; */
+    border: 1px solid brown;
 }
 
 #gproduct_img {
@@ -32,7 +32,7 @@ body {
 .gright-product-description {
     width: 60%;
     background-color: #f5f5f5;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     padding-top: 30px;
 }
 
@@ -389,4 +389,20 @@ body {
 .similarproductcontainer {
     display: flex;
     justify-content: space-between;
+}
+
+#productimageg .apiimage {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#productimageg {
+    margin: auto;
+    text-align: center;
+}
+
+#apitext {
+    font-size: 12px;
+    margin-left: 30px;
 }

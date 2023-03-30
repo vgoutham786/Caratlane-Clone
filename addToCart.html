@@ -17,20 +17,15 @@
     <div class="main">
 
         <div class="gleft-product-image">
-
+            <p id="apitext"></p>
+            <!-- title of item  -->
 
             <div id="productimageg">
                 <p style="text-align: center;">images goes here</p>
-                <!-- <p>hello</p>
-                <img src="https://lh3.googleusercontent.com/4kYuJeuYY3QL0eDcmfg_FjfS4UuPmdTVt4CdOsfGo1TG3uxpx5tu6lQy-SLYaCzuTBkcexpXxddIqw0P4nkNvlQDBg6x9i02q5hzm3Y" alt=""> -->
 
+                <!-- image appendsto dom -->
             </div>
-            <!-- <img id="gproduct_img" src="https://lh3.googleusercontent.com/4kYuJeuYY3QL0eDcmfg_FjfS4UuPmdTVt4CdOsfGo1TG3uxpx5tu6lQy-SLYaCzuTBkcexpXxddIqw0P4nkNvlQDBg6x9i02q5hzm3Y" alt="">
-                <div class="gagreemment">
-                    <p> <img src="https://lh3.googleusercontent.com/QzFVzyRvGnj_4a5SMVzR4EDDvRAbowydzoYEY_5mWHABr2Vp_70Ol8zAchh4L891xFlyGZ_Sl078fecG6c92bPGm05xjcVCcBbbE9mfxgw" alt=""> 15 Day Money Back</p>
-                    <p><img src="https://lh3.googleusercontent.com/e-2_PMoWpJxkhM38PIVdi7sw1sTf3hP08uwAXliS6CuDpQkHaepvszPj-73H5VkWOKBvonDl3IuG4tQd7eJ99YXSLIwJvA4NAd9lKAGW" alt=""> Lifetime Exchange</p>
-                    <p><img src="https://lh3.googleusercontent.com/zCRrC4V8GCrVQSVCBx67V-udj4VSxS8WdHENmJZ7Y5VwvXKhrKUAd-m6Dx-oG8LfSvzmsG5t8mQicmkTltEErX9QPjtYkHDZmfBpr8xv" alt="">100% exchange</p>
-                </div> -->
+
         </div>
 
 
@@ -43,7 +38,7 @@
             <div class="gheading-product">
                 <h3>Meghra perals drop hearings</h3>
                 <div class="glogo">
-                    <a href="#"> <img src="https://lh3.googleusercontent.com/o9l0SHTPClPgrNs9YkWwd_5U2EYAs1te0_tWf_DQpzOK_f1oB177AmkJdsGRE23G-e-kqUfIrIjCOPVEBaFLIOWiab8OXqcZH_bq-iyQ8g" alt=""></a>
+                    <a href="#"> <img src="https://lh3.googleusercontent.com/o9l0SHTPClPgrNs9YkWwd_5U2EYAs1te0_tWf_DQpzOK_f1oB177AmkJdsGRE23G-e-kqUfIrIjCOPVEBaFLIOWiab8OXqcZH_bq-iyQ8g" alt="" id="click"></a>
                     <a href="#"> <img src="https://lh3.googleusercontent.com/RHgpl_0Z04OUU6Twtn9DVDZFabezilaycPg_wYZbZqK1NjRg8p-_BXHXn5khB3sloy1pgW1jLAUxm0FWRdLSTigVl4KPfJwEDEc-NXfS" alt=""></a>
                     <a href="#"> <img src="https://lh3.googleusercontent.com/s0vCHCQ9DaSpURdKhsknz3b9P7gY-L6Y_Dl8wAUwf-2aY_xSrmhPf7tbA_GrXed0aj7VXY2hj_ihfFapAn8x12XBAvv4JdO_xcg1KvQ" alt=""></a>
                 </div>
@@ -58,7 +53,7 @@
             </div>
             <div>
                 <img src="https://lh3.googleusercontent.com/3kQJ4EIjI4ix2hkgJtE1T3YNLXIl3Iluy8c7L97ZvyPRKlYOh-wHhdBwGkncY2jiGruGrSkzoD26sFMQgttQPxIadtX6VXJ2XVSjcDUm" alt="" id="gmrp">
-                <h3 id="gmrp">$34,5444</h3>
+                <h3 id="gmrp"><span id="price"></span></h3>
             </div>
             <div class="gaddtocart-btn">
                 <button class="gbtn-cart findbtn2">ADD TO CART</button>
@@ -151,7 +146,7 @@
     <div class="gproductdetails">
 
         <div class="gproductdetails_left">
-            <p>SKU:</p>
+            <p>SKU:<span id="sku"></span> </p>
             <p id="producttext">Product Details</p>
             <p id="set">Set in 18 KT Yellow Gold(3.840 g) with diamonds (0.130 ct ,GH-SI)</p>
 
@@ -284,12 +279,18 @@
             <div class="similaritem1">
 
                 <img src="https://lh3.googleusercontent.com/LIL6jiTueAgswIHQPTk92LU_1-slLZ6ufmPFeLthAA-8JyyGRhMCguZMFsoP-PuGEhyRJ5lZ02hgSuP1K49m1J9uWwsrfLaw_Ue8TnI" alt="">
+                <p>₹50,00 <s> ₹46777</s></p>
+                <p>Earnings</p>
+
 
             </div>
 
             <div class="similaritem1">
 
                 <img src="https://lh3.googleusercontent.com/_LMcHHd0lOt2bQpU5fGxbhI60x9Yl1q69LK0nlZgBas0qtWrnNJg54t5PzQoL_FIOF0qERq7iJBh61Sx1CAFb0U3aEe1aMwUMk9ppp0" alt="">
+                <p>₹50,00 <s> ₹46777</s></p>
+                <p>Earnings</p>
+
 
             </div>
 
@@ -298,12 +299,22 @@
                 <img class=" similaritem1 ">
 
                 <img src="https://lh3.googleusercontent.com/_LMcHHd0lOt2bQpU5fGxbhI60x9Yl1q69LK0nlZgBas0qtWrnNJg54t5PzQoL_FIOF0qERq7iJBh61Sx1CAFb0U3aEe1aMwUMk9ppp0 " alt=" ">
+                <p>₹50,00 <s> ₹46777</s></p>
+                <p>Earnings</p>
+
 
             </div>
 
+            <div class="similaritem1">
+
+                <img class=" similaritem1 ">
+
+                <img src="https://lh3.googleusercontent.com/_LMcHHd0lOt2bQpU5fGxbhI60x9Yl1q69LK0nlZgBas0qtWrnNJg54t5PzQoL_FIOF0qERq7iJBh61Sx1CAFb0U3aEe1aMwUMk9ppp0 " alt=" ">
+                <p>₹50,00 <s> ₹46777</s></p>
+                <p>Earnings</p>
+
+            </div>
         </div>
-
-
     </div>
 
 

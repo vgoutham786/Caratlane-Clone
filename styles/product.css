@@ -43,11 +43,11 @@ header {
 }
 #right-part {
   margin-right: 50px;
-  display: flex;
+  /* display: flex; */
   /* border: 2px solid red; */
 }
 
-.select-box {
+#filter {
   padding: 8px 10px;
   width: 250px;
   border: none;
@@ -130,9 +130,7 @@ input[type="radio"] {
 
 #data-wrapper {
   width: 1000px;
-  height: 1000px;
-  /* background-color: gainsboro; */
-  border: 1px solid gainsboro;
+  /* border: 1px solid gainsboro; */
   border-radius: 30px;
   margin-left: 50px;
 }
@@ -140,7 +138,7 @@ input[type="radio"] {
 .card {
   width: 300px;
   /* height: 400px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-left: 20px;
   margin-top: 20px;
   border-top-right-radius: 10px;
@@ -182,4 +180,8 @@ input[type="radio"] {
   color: #6cbc64;
   border-radius: 8px;
   border: 1px solid #6cbc64;
+}
+#data-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

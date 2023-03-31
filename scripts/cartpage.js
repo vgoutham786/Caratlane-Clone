@@ -3,8 +3,20 @@ let displayCart = document.getElementById("displayCart");
 let cartArray = JSON.parse(localStorage.getItem("cart"));
 
 let wishListCart = JSON.parse(localStorage.getItem("wishListCart")) || [];
+emptycart = document.getElementById("emptywishlist")
 
-display(cartArray)
+let totalElements = document.getElementsByClassName("totalItems")
+let sum = 0;
+let totalBill = document.getElementsByClassName("totalBill")
+
+
+if (cartArray.length == 0) {
+    emptycart.style.display = "block"
+} else {
+    display(cartArray)
+}
+
+
 function display(arr) {
     displayCart.innerHTML = "";
     let x = ``;
@@ -20,7 +32,7 @@ function display(arr) {
         <div class="details">
             <p>${e.title}</p>
             <div>
-                <p>Size : <select name="" id="">
+                <p class="size">Size : <select name="" >
                         <option value="">4</option>
                         <option value="">5</option>
                         <option value="">6</option>
@@ -29,7 +41,7 @@ function display(arr) {
                         <option value="">9</option>
 
                     </select></p>
-                <p> Quantity : <select name="" class="quantity">
+                <p class="quan"> Quantity : <select name="" class="quantity">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -54,6 +66,8 @@ function display(arr) {
     })
 
     displayCart.innerHTML = x;
+    let gprice = document.getElementsByClassName("gprice")
+    let quantity = document.getElementsByClassName("quantity");
     let remove = document.getElementsByClassName("remove");
     for (let i = 0; i < remove.length; i++) {
         remove[i].addEventListener("click", (e) => {
@@ -89,4 +103,40 @@ function display(arr) {
             display(arr)
         })
     }
+    sumprice()
+    function sumprice() {
+        sum = 0;
+        arr.forEach((element, index) => {
+            sum += element.price * quantity[index].value;
+        });
+    }
+    let sumbill = sum.toLocaleString("en-IN");
+    for (let i = 0; i < totalBill.length; i++) {
+        totalBill[i].innerText = `₹${sumbill}`
+    }
+
+
+
+    console.log(totalElements)
+    for (let i = 0; i < totalElements.length; i++) {
+        totalElements[i].innerText = arr.length
+    }
+
+    for (let i = 0; i < quantity.length; i++) {
+        quantity[i].addEventListener("change", () => {
+            price = quantity[i].value * arr[i].price;
+            changedPrice = price.toLocaleString("en-IN");
+            gprice[i].innerText = changedPrice
+            sumprice();
+            sumbill = sum.toLocaleString("en-IN");
+            for (let i = 0; i < totalBill.length; i++) {
+                totalBill[i].innerText = `₹${sumbill}`
+            }
+
+            console.log(sum)
+        })
+    }
+
+
+
 }

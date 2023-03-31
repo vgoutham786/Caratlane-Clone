@@ -16,8 +16,7 @@ function loginchek() {
       flag2 = true;
     }
   }
-  
-  if ( flag1 == true && flag2 == true )
+    if ( flag1 == true && flag2 == true )
     {
       alert("Login Successful");
       window.location.href = "index.html";

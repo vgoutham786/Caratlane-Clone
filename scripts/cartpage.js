@@ -1,4 +1,5 @@
 let displayCart = document.getElementById("displayCart");
+let middleEl = document.getElementById("middle");
 
 let cartArray = JSON.parse(localStorage.getItem("cart"));
 
@@ -18,6 +19,10 @@ if (cartArray.length == 0) {
 function display(arr) {
   displayCart.innerHTML = "";
   let x = ``;
+  if (arr.length == 0) {
+    emptycart.style.display = "block";
+    middleEl.style.display = "none";
+  }
 
   arr.map((e) => {
     let price = e.price;

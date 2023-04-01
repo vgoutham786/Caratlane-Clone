@@ -17,6 +17,9 @@ if (wishListCart == null || wishListCart.length == 0) {
 function display(arr) {
   displayCart.innerHTML = "";
   let x = ``;
+  if (arr.length == 0) {
+    empty.style.display = "block";
+  }
   arr.map((e) => {
     //console.log(e)
     let price = e.price;

@@ -67,4 +67,5 @@ cartbtn.addEventListener("click", () => {
   alert("Added to cart");
   cart.push(data[0]);
   localStorage.setItem("cart", JSON.stringify(cart));
+  location.replace("./cartpage.html");
 });

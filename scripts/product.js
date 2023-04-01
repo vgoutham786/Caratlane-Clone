@@ -91,7 +91,7 @@ function createCardEl(item) {
 
   imgEl.addEventListener("click", function () {
     localStorage.setItem("addToCart", JSON.stringify(item));
-    // window.location.href = "./addToCart.html";
+    window.location.href = "./addToCart.html";
   });
 
   let cardData = document.createElement("div");
@@ -118,9 +118,14 @@ function createCardEl(item) {
   ViewBtn.innerText = "View Details";
 
   ViewBtn.addEventListener("click", (e) => {
-    // console.log(e.target);
-    localStorage.setItem("addToCart", JSON.stringify(item));
-    // window.location.href = "./addToCart.html";
+    console.log(e.target);
+    let newArr = [];
+    newArr.push(item);
+    console.log(newArr);
+    localStorage.setItem("addToCart", JSON.stringify(newArr));
+    console.log(newArr);
+    console.log(item);
+    window.location.href = "./addToCart.html";
   });
 
   let callBtn = document.createElement("button");

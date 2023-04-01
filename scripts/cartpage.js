@@ -100,7 +100,7 @@ function display(arr) {
       wishListCart.push(cartArray[index]);
       arr.splice(index, 1);
       localStorage.setItem("cart", JSON.stringify(arr));
-      localStorage.setItem("wishListCart", JSON.stringify(wishListCart));
+      localStorage.setItem("wishList", JSON.stringify(wishListCart));
       display(arr);
     });
   }

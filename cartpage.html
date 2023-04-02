@@ -11,46 +11,207 @@
 
 <body>
     <nav>
-        <button>&larr;</button>
-        <div><img src="./images/caroma.jpg" alt=""></div>
+        <button> <a href="addToCart.html" style="text-decoration: none;">&larr;</a> </button>
+        <div> <a href="./index.html"><img src="./images/caroma.jpg" alt=""></a></div>
 
-        <div>
-            <a href="./index.html"><img
-                    src="https://lh3.googleusercontent.com/b7tc-hN-u-Qjs3ROh8gAoEtMKrNXb3UdLQR49dw7EMa3H375O0MihNncwaMEVIPnDjWXIqLbTk9otrzkK5kY41hPeVPMGWBBX_2RlC6vKw"
-                    alt=""></a>
+        <div style="width:20%">
+            <img src="https://lh3.googleusercontent.com/b7tc-hN-u-Qjs3ROh8gAoEtMKrNXb3UdLQR49dw7EMa3H375O0MihNncwaMEVIPnDjWXIqLbTk9otrzkK5kY41hPeVPMGWBBX_2RlC6vKw"
+                alt="">
 
-            <h3>Shopping Cart (<span class="totalItems"></span>)</h3>
+            <h3 class="shop">Shopping Cart (<span class="totalItems"></span>)</h3>
         </div>
-        <div>
+        <div style="width:20%">
             <img src="https://lh3.googleusercontent.com/djaI8CO9ZFFtfQf7T52eFAyLhlx5GFEA2mNW5pODiiMdWt2Xjm-G2XcVOlix8LSN4rC6vQsYNFtGgp3BiLh8PFw7s9pXJzgLgVXZkjykVg"
                 alt="">
-            <h3>Try at Home Cart (0) </h3>
+            <h3 class="shop">Try at Home Cart </h3>
         </div>
     </nav>
-
-    <div id="middle">
-        <div id="staticdiv">
-            <div>
-                <p>Get ₹ 4800 xCLusive points on this order.</p>
-                <p>You can redeem these points on your next order
-                <p>( 1 Point = 1 rupee ) <a href="">Know More</a> </p>
-                </p>
-            </div>
-            <img src="https://lh3.googleusercontent.com/4AkV-ITwfEak4jUVkiYaimaW9QaFKp8a6aOlqP8KVEbsuqdjErxQQtyceDTDyMC01OXONsKZiyxOhLnNsRYOvmHLsnJXzR-8repEa4A8"
+    <section id="emptywishlist">
+        <div>
+            <img src="https://lh3.googleusercontent.com/5Anoy0abgWvCmgJ0e9ZTkHX6A00ltwc0MM11_LsNdnnsiet-Z6ocBpDLpAvAHhNCc84InNQSAxYBEupqkAFTYbELcmwVF5Ho9HmnuQ3gcQ"
                 alt="">
+
         </div>
+        <div>
+            <p>Uh Oh!</p>
+            <p>Your Cart Seems to be Empty!</p>
+        </div>
+
+        <a href="./index.html"><button id="shop">Start Shopping</button></a>
+    </section>
+    <div id="middle">
+
 
         <div>
-            <p>Total (<span class="totalItems"></span> Items) : <span class="totalBill"></span></p>
-            <p> Save Cart</p>
+            <div id="staticdiv">
+                <div>
+                    <p>Get ₹ 4800 xCLusive points on this order.</p>
+                    <p>You can redeem these points on your next order
+                    <p>( 1 Point = 1 rupee ) <a href="">Know More</a> </p>
+                    </p>
+                </div>
+                <img src="https://lh3.googleusercontent.com/4AkV-ITwfEak4jUVkiYaimaW9QaFKp8a6aOlqP8KVEbsuqdjErxQQtyceDTDyMC01OXONsKZiyxOhLnNsRYOvmHLsnJXzR-8repEa4A8"
+                    alt="">
+            </div>
+
+            <div>
+                <p>Total (<span class="totalItems"></span> Items) : <span class="totalBill"></span></p>
+                <p> Save Cart</p>
+            </div>
+            <div id="displayCart">
+
+
+            </div>
         </div>
-        <div id="displayCart">
-            
+        <div>
+
+        </div>
+        <div id="right">
+            <div>
+                <button>
+                    Apply Coupoun- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                    &nbsp; &nbsp;&nbsp;<span class="avail">3 Available</span>
+                </button>
+            </div>
+            <div id="delivery" style="width: 100%; margin-left: 0;background-color: white;">
+                <p><img src="https://lh3.googleusercontent.com/l0hw5BmyJ-in-d6L8kPYgXWaLjgAYiRNeis8k5XHaPjGhE1O0kQ6PNreKuaKTvH_mT4rJWOpt7UmwgdfSELyd4JzV6aucPsFY0PJ8Jg"
+                        alt=""> Check Delivery Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;
+                    &nbsp; <span>Enter
+                        Pincode</span> </p>
+            </div>
+            <p>Order Summary</p>
+            <div id="orderSummary">
+                <p>Subtotal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp; <span class="totalBill"></span></p>
+                <p>Coupoun Discount &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                    <span style="color:#DE57E5 ;">Apply Coupon</span>
+                </p>
+                </p>
+                <p>Delivery Charge(Standard) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="avail">Free</span>
+                </p>
+                <p>Total cost &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="totalBill"></span>
+                </p>
+            </div>
+            <a href="./payment.html"><button id="checkout">Checkout Securely</button></a>
 
         </div>
     </div>
 
+    <!-- //////////////////////////////////// -->
+    <div id="aboutus">
+        <div id="about123">
+            <div id="aboutinner">
+                <div>
+                    <h5>Know your Jewellery</h5>
+                    <p>DIAMOND GUIDE</p>
+                    <p>JEWELLERY GUIDE</p>
+                    <p>GEMSTONES GUIDE</p>
+                    <p>RENT BY AUDORN</p>
+                    <p>GOLD RATE</p>
+                    <p>DIGITAL GOLD</p>
+                </div>
+                <div>
+                    <h5>CaratLane Advantage</h5>
+                    <p>15-DAY RETURNS</p>
+                    <p>FREE SHIPPING</p>
+                    <p>FINANCING OPTIONS</p>
+                    <p>OLD GOLD EXCHANGE</p>
+                </div>
+                <div>
+                    <h5>Customer Service</h5>
+                    <p>RETURN POLICY</p>
+                    <p>ORDER STATUS</p>
+                </div>
+                <div>
+                    <h5>About Us</h5>
+                    <p>OUR STORY</p>
+                    <p>PRESS</p>
+                    <p>BLOG</p>
+                </div>
+            </div>
+            <div>
+                <div class="lowabout">
+                    <div>
+                        <img id="fbp" src="img/pfb.png" alt="" />
+                    </div>
+                    <div>
+                        <img id="ip" src="img/pinsta.png" alt="" />
+                    </div>
+                    <div>
+                        <img id="pp" src="img/pp.png" alt="" />
+                    </div>
+                    <div>
+                        <img id="pt" src="img/ptwitter.png" alt="" />
+                    </div>
+                    <div>
+                        <img id="pl" src="img/plinkedin.png" alt="" />
+                    </div>
+                </div>
+                <p id="pdown">Download CaratLane app</p>
+                <!-- Download option  -->
+                <div id="pstore">
+                    <div class="storeimg">
+                        <img src="img/pplay.png" alt="" class="pstorei" id="pstorei-1">
+                    </div>
+                    <div class="storeimg">
+                        <img src="img/apple.png" alt="" class="pstorei" id="pstorei-2">
+                    </div>
+                </div>
+                <!-- //////////////////////// -->
+                <!-- <p>COPYRIGHT CARATLANE © 2022</p>
+        <p>
+          SITE MAP | PRIVACY | POLICYTERMS & CONDITIONS | CORPORATE | XCLUSIVE
+          | FREQUENTLY ASKED QUESTION
+        </p> -->
+            </div>
+        </div>
+        <div id="contactlast">
+            <div>
+                <h5>Contact Us</h5>
+                <!-- <p>+91-44-42935000 (HELPLINE); WORKING</p> -->
+                <div class="contactimg">
+                    <div class="con">
+                        <a href="https://www.caratlane.com/tel:+91-44-42935000" class="pphone1" target="_blank">
+                            <img src="img/pphone.png" alt="" class="pphone">
+                        </a>
+                    </div>
+                    <div class="con">
+                        <a href="https://www.caratlane.com/contacts" class="pphone1" target="_blank">
+                            <img src="img/pchat.png" alt="" class="pchat">
+                        </a>
+                    </div>
 
+                    <div class="con">
+                        <a href="https://api.whatsapp.com/send/?phone=917358065888&text=Hi%21+I+have+some+queries+regarding+jewellery.+Please+assist+me+with+the+same&type=phone_number&app_absent=0"
+                            class="pphone1" target="_blank">
+                            <img src="img/pwhatsapp.png" alt="" class="pwhatsapp">
+                        </a>
+                    </div>
+                </div>
+                <p>24X7 Enquiry Support(All Days)</p>
+                <p>General: <span class="ppink">Contactus@Caratlane.Com</span></p>
+                <p>Corporate : <span class="ppink">B2B@Caratlane.Com</span></p>
+                <p>Corporate : <span class="ppink">B2B@Caratlane.com</span></p>
+                <p>HR : <span class="ppink">Carrers@Caratlane.com</span></p>
+                <p>Grievance : <span class="ppink">Click Here</span></p>
+                <button class="find">FIND A STORE</button>
+            </div>
+            <!--  -->
+            <div class="pdil">
+                <img src="img/pcard.png" alt="" class="pdili">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -2,11 +2,13 @@ var pay = JSON.parse(localStorage.getItem("cartData")) || [];
 
 console.log(pay);
 
-var total = pay.reduce(function (sum, elem, index, arr) {
-  return sum + Number(elem.price);
-}, 0);
-
-console.log(total);
+let totalBill = JSON.parse(localStorage.getItem("totalSum"));
+let btn = document.getElementById("green1");
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  Validate();
+});
+// console.log(total);
 
 // var a=12434;
 
@@ -16,9 +18,9 @@ console.log(total);
 
 //console.log(discount)
 
-document.querySelector("#p7").innerText = `₹${total}`;
+document.querySelector("#p7").innerText = `₹${totalBill}`;
 
-document.querySelector("#p6").innerText = `₹${total}`;
+document.querySelector("#p6").innerText = `₹${totalBill}`;
 
 //document.querySelector("#p6").innerText =`Rs${total}`;
 
@@ -66,46 +68,55 @@ pay.map(function (elem, index) {
 
 function Validate() {
   var name = document.getElementsByClassName("i1");
-
-  var error = document.getElementsByClassName("error");
-
-  error[0].style.display =
-    name[0].value == "" ? "block" : (window.location.href = "");
-
-  name[0].style.border = name[0].value == "" ? "1px solid red" : "";
-
-  name[0].focus();
-
+  // var error = document.getElementsByClassName("error");
   var lname = document.getElementsByClassName("i2");
-
-  var lerror = document.getElementsByClassName("error1");
-
-  lerror[0].style.display =
-    lname[0].value == "" ? "block" : (window.location.href = "");
-
-  lname[0].style.border = lname[0].value == "" ? "1px solid red" : "";
-
-  lname[0].focus();
-
-  var l1name = document.getElementsByClassName("i6");
-
-  var l1error = document.getElementsByClassName("error2");
-
-  l1error[0].style.display =
-    l1name[0].value == "" ? "block" : (window.location.href = "");
-
-  l1name[0].style.border = l1name[0].value == "" ? "1px solid red" : "";
-
-  l1name[0].focus();
-
+  var l1name = document.getElementById("i3");
   var l2name = document.getElementsByClassName("i10");
+  console.log(name[0].value);
+  if (
+    name[0].value != "" &&
+    lname[0].value != "" &&
+    l1name.value != "" &&
+    l2name[0].value != ""
+  ) {
+    // console.log("hi");
+    location.replace("./paymentGateway.html");
+  } else {
+    alert("Please Fill All the Details");
+  }
+  // error[0].style.display =
+  //   name[0].value == "" ? "block" : (window.location.href = "");
 
-  var l2error = document.getElementsByClassName("error3");
+  // name[0].style.border = name[0].value == "" ? "1px solid red" : "";
 
-  l2error[0].style.display =
-    l2name[0].value == "" ? "block" : (window.location.href = "pay.html");
+  // name[0].focus();
 
-  l2name[0].style.border = l2name[0].value == "" ? "1px solid red" : "";
+  // var lerror = document.getElementsByClassName("error1");
 
-  l2name[0].focus();
+  // lerror[0].style.display =
+  //   lname[0].value == "" ? "block" : (window.location.href = "");
+
+  // lname[0].style.border = lname[0].value == "" ? "1px solid red" : "";
+
+  // lname[0].focus();
+
+  // var l1error = document.getElementsByClassName("error2");
+
+  // l1error[0].style.display =
+  //   l1name[0].value == "" ? "block" : (window.location.href = "");
+
+  // l1name[0].style.border = l1name[0].value == "" ? "1px solid red" : "";
+
+  // l1name[0].focus();
+
+  // var l2error = document.getElementsByClassName("error3");
+
+  // l2error[0].style.display =
+  //   l2name[0].value == ""
+  //     ? "block"
+  //     : (window.location.href = "paymentGateway.html");
+
+  // l2name[0].style.border = l2name[0].value == "" ? "1px solid red" : "";
+
+  // l2name[0].focus();
 }

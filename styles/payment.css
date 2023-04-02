@@ -715,7 +715,7 @@ border-right: 1px solid rgb(233, 233, 233); */
 
   /* border: 2px solid violet; */
 
-  margin-top: -29%;
+  margin-top: -20%;
 
   padding: 15px 16px 10px;
 
@@ -860,4 +860,10 @@ margin-left: 40px; */
 
 .f1 {
   margin-right: -100px;
+}
+.det > div:nth-child(1) {
+  margin-top: -50%;
+
+  background-color: #f6eff6;
+  border-radius: 10px;
 }

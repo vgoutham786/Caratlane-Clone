@@ -11,7 +11,7 @@ This was a collaborative construct week project at Masai School. This project wa
 
 ### Team
 
-- Goutham K
+- Goutham V
 - Prerna 
 - Ravin Kumar jangir
 - Ganesh Kumar

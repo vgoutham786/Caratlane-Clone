@@ -48,7 +48,7 @@ Today CaratLane is India's largest omni-channel jeweller. CaratLane also has ove
 - Cart Page
 - Payment Page
 - Payment Gateway Page
-- Admin Signin & Singup Page
+- Admin Signin & Signup Page
 - Admin Product Page
 
 ### Responsiveness

@@ -2,8 +2,8 @@
 
 
 # Responsive CaratLane Clone [Caroma]
+![logo-modified (2)](https://user-images.githubusercontent.com/96585116/229367232-d34d0778-7aa9-4d4d-9ea5-64b296b158d3.png)
 ### Deployed Link :
-### Logo 
 ### Objective
 The objective of a Caroma Jewellery website is to create a positive and engaging experience for potential customers that will ultimately lead to increased sales and customer loyalty.
 
@@ -52,8 +52,7 @@ Today CaratLane is India's largest omni-channel jeweller. CaratLane also has ove
 - Admin Product Page
 
 ### Responsiveness
-
-
+- All Pages are Responsive
 
 
 
